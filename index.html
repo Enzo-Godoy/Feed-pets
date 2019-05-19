@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Angular example</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.30/angular.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body >
+      <div ng-app ng-init="cats = 0, food = 0">
+        <b>Feed information pets:</b>
+        <form class="form-group">
+        <div>
+          I've got all these cats: <input type="number" ng-model="cats" class="form-control">
+          <small  class="form-text text-muted">We'll never let your cats without food</small>
+         </div>
+       <div >
+        They used to eat kg: <input type="number" ng-model="food" class="form-control">
+      </div>
+    </form>
+      <h2 class="alert alert-info" role="alert">
+        For one day, I need all this kg of food: {{cats * food }}
+      </h2>
+      
+    </div>
+</body>
+</html>
